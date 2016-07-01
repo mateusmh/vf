@@ -1,0 +1,317 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {}
+
+@media screen and (max-width:480px) {
+	.hello{display:none !important;}
+	.links-mobile{width:70% !important;}
+	.valor-consultar{width:100%;} 
+}
+
+@media screen and (max-width:768px) {
+	
+}
+
+@media screen and (max-width:991px) {
+	.menu{
+		display:none !important;
+	}
+	
+	.menu-mobile{
+		display:block !important;
+	}
+	
+	.close-menu{width:20% !important}
+
+	.links-mobile ul{width:80% !important}
+	
+	.box-consultas{
+		margin-bottom:20px !important;
+	}
+	
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {}
+
+
+/* Resets */
+ul{
+	padding:0;
+	list-style:none;
+}
+
+
+
+
+
+/* Buttons */
+.btn-green{
+	background:#3D9400 url(../img/ico-button.png) no-repeat 10px 12px;
+	border:1px solid #348200;
+	color:#FFF;
+	font-size:15px;
+	padding:10px 10px 10px 30px;
+	border-radius:5px;
+}
+
+.btn-green:hover, .btn-green:active, .btn-green:visited{
+	color:#FFF;
+	text-decoration:none;
+	background-color:#348200;
+}
+
+.btn-green-xs{
+	background:#3D9400;
+	border:1px solid #348200;
+	color:#FFF;
+	font-size:12px;
+	padding:4px;
+	border-radius:3px;
+	display: inline-block;
+}
+
+.btn-green-xs:hover, .btn-green-xs:active, .btn-green-xs:visited{
+	color:#FFF;
+	text-decoration:none;
+	background-color:#348200;
+}
+
+.btn-green-lg{
+	background:#3D9400 url(../img/ico-button-lg.png) no-repeat 10px 12px;
+	border:1px solid #348200;
+	color:#FFF;
+	font-size:18px;
+	padding: 18px 19px 14px 49px;
+	border-radius:5px;
+}
+
+.btn-green-lg:hover, .btn-green-lg:active, .btn-green-lg:visited{
+	color:#FFF;
+	text-decoration:none;
+	background-color:#348200;
+}
+
+
+
+
+
+body{
+	background:#F2F2F2;
+}
+
+
+/* Header */
+.header{
+	height:73px;
+	background:#FFF;
+}
+
+.logo{
+	float:left;
+	margin:16px 0 0 0;
+}
+
+.menu{
+	float:right;
+	margin:27px 0 0 0;
+	
+}
+
+.menu li{
+	display:inline-block;
+	margin:0 0 0 24px;
+}
+
+.menu li a{
+	font-size:14px;
+	color:#444;
+}
+
+.menu-mobile{
+	display:none;
+	float:right;
+	margin:22px 0 0 0;
+	cursor:pointer;
+}
+
+.links-mobile{
+	position:absolute;
+	right:0;
+	top:0;
+	z-index:666;
+	background:#FF7A4D;
+	height:100%;
+	width:40%;
+	display:none;
+}
+
+.close-menu{
+	float:left;
+	width:10%; 
+	background:#FF4609;
+	height:100%;
+	text-align:center;
+	padding:20px 0 0 0; 
+}
+
+.links-mobile ul{
+	list-style:none;
+	padding:0;
+	width:90%;
+	float:right;
+}
+
+.links-mobile ul li a{
+	color:#FFF;
+	padding:20px;
+	border-bottom:1px solid #FFB79F; 
+	width:100%;
+	display: inline-block;
+	text-decoration:none;
+
+}
+
+
+
+
+
+/* navbar */
+.navegacao{
+	background:#DDD;
+	border-bottom:1px solid #CCC;
+	height:59px;
+	margin:0 0 25px 0;
+}
+
+.hello{
+	font-size:14px;
+	color:#444;
+	margin: 20px 0 0 5px;
+	float:left;
+}
+.box-right-nav{
+	font-size:14px;
+	color:#333;
+	float:right;
+}
+
+.box-saldo{
+	line-height: 140%;
+    margin: 10px 0 0 0;
+	float:left;
+}
+
+.saldo{
+	font-size:20px;
+	color:#FF7A4D;
+}
+
+.btn-creditos{
+	float: right;
+    margin: 8px 0 0 14px
+}
+
+
+
+
+/* Box Consultas */
+.text-con{
+	color:#000;
+	font-size:16px;
+	margin:0 0 25px 0;
+}
+
+
+.box-consultas{
+	background:#FFF;
+	padding:20px 17px 10px 17px;
+}
+
+.box-consultas .title-consultas{
+	font-size:23px;
+	color:#212121;
+	margin:0 0 18px 0;
+}
+
+.box-consultas ul li{
+	border-bottom:1px dotted #CCC;
+	padding:0 0 10px 0;
+	margin:0 0 20px 0;
+}
+
+.box-consultas ul li:hover{
+
+}
+
+.box-consultas ul li span{
+	font-size:16px;
+	color:#212121;
+}
+
+.box-consultas ul li .valor-consulta{
+	font-size:15px;
+	color:#FF7A4D;
+	font-weight:bold;
+}
+
+
+
+
+/* Page Consultar */
+.box-title-consulta{
+	margin:0 0 10px 0;
+}
+
+.title-consulta{
+	font-size:25px;
+	color:#000;
+	margin-top: 8px;	
+}
+
+.valor-consultar{
+	background:#FFF;
+	border:1px solid #CCC;
+	color:#3D9400;
+	padding:5px 10px;
+	font-size:20px;
+ 
+}
+
+.consultar{
+	background:#FFF; 
+	padding:20px;
+}
+
+.input-consultar, .select-consultar{
+	width:100%;
+	padding:12px 10px;
+	display:block;
+}
+
+.form-group{
+	text-align:left;
+}
+
+
+
+
+/* Page Historico consultas */
+.title-pages{
+	font-size:23px;
+	color:#212121;
+	margin:0 0 18px 0;
+}
+
+
+
+
+
+
+
+
